@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Lista de Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lista de Produtos</h1>
+        <a href="/create">Criar Novo Produto</a>
+    </header>
+    <div class="container">
+        <div class="table-container">
+            {% if produtos %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for produto in produtos %}
+                    <tr>
+                        <td>{{ produto.id }}</td>
+                        <td>{{ produto.nome }}</td>
+                        <td>{{ produto.codigo }}</td>
+                        <td>{{ produto.descricao }}</td>
+                        <td>R$ {{ produto.preco }}</td>
+                        <td>
+                            <a href="/edit/{{ produto.id }}">Editar</a>
+                            <form action="/delete/{{ produto.id }}" method="post">
+                                <button type="submit" class="bg-red-600 text-white py-1 px-2 rounded">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>Nenhum produto cadastrado.</p>
+            {% endif %}
+        </div>
+    </div>
+    <footer class="footer">
+        © 2024 Nunes Sports. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
