@@ -33,30 +33,31 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
 
 1. **Clone este repositório:**
    ```bash
-  git clone https://github.com/V1vianes/nunes_sports.git
+   git clone https://github.com/V1vianes/nunes_sports.git
 
 2. **Crie um ambiente virtual:**
-   ```bash
-  cd nunes_sports
+   ``` bash
+   cd nunes_sports
 
 3. **Navegue até o diretório do projeto:**
-   ```bash python -m venv env
+   ```bash
+   python -m venv env
 
 4. **Ative o ambiente virtual:**
-*No Windows:
-    ```bash
-  .\env\Scripts\activate
-
-*No macOS/Linux:
-    ```bash
-  source env/bin/activate
+   ```bash
+   *No Windows:
+   .\env\Scripts\activate
+   
+   *No macOS/Linux:
+   source env/bin/activate
 
 5. **Instale as dependências:**
    ```bash
-  pip install -r requirements.txt
+   pip install -r requirements.txt
 
 6. **Inicie a aplicação:**
    ```bash
-  uvicorn app.main:app --reload
-  
+   uvicorn app.main:app --reload
+
+
 **Acesse a aplicação em:** [http://localhost:8000](http://localhost:8000)
