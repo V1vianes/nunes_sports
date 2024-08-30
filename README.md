@@ -51,11 +51,7 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
    *No macOS/Linux:
    source env/bin/activate
 
-5. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-
-6. **Inicie a aplicação:**
+5. **Inicie a aplicação:**
    ```bash
    uvicorn app.main:app --reload
 
