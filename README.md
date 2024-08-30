@@ -50,10 +50,13 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
    
    *No macOS/Linux:
    source env/bin/activate
-
-5. **Inicie a aplicação:**
+   
+5. **Instale as dependências:** 
    ```bash
-   uvicorn app.main:app --reload
-
-
-**Acesse a aplicação em:** [http://localhost:8000](http://localhost:8000)
+   pip install -r requirements.txt```
+   
+6. **Inicie a aplicação:**
+   ```bash
+   uvicorn app.main:app --reload```
+   
+7. **Acesse a aplicação em:** [http://localhost:8000](http://localhost:8000)
