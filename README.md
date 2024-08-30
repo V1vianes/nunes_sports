@@ -53,10 +53,10 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
    
 5. **Instale as dependências:** 
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
    
 6. **Inicie a aplicação:**
    ```bash
-   uvicorn app.main:app --reload```
+   uvicorn app.main:app --reload
    
 7. **Acesse a aplicação em:** [http://localhost:8000](http://localhost:8000)
