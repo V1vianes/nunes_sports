@@ -37,11 +37,11 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
 
 2. **Crie um ambiente virtual:**
    ``` bash
-   cd nunes_sports
-
+   python -m venv env
+   
 3. **Navegue até o diretório do projeto:**
    ```bash
-   python -m venv env
+   cd nunes_sports
 
 4. **Ative o ambiente virtual:**
    ```bash
