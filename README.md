@@ -20,8 +20,8 @@ Este projeto foi desenvolvido como parte de um desafio de programação para cri
 
 - **app/** - Contém os arquivos principais da aplicação.
   - **routers/** - Rotas da aplicação.
-  - **static/** - Arquivos CSS e JavaScript
-  - **templates/** - Arquivos HTML renderizados com Jinja2 para a interface web.
+  - **static/** - Arquivos CSS 
+  - **templates/** - Arquivos HTML renderizados com Jinja2 para a interface web e javascript.
   - **crud.py** - Operações CRUD para a gestão dos produtos.
   - **database.py** - Configuração do banco de dados SQLite.
   - **main.py** - Ponto de entrada da aplicação.
